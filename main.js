@@ -1,5 +1,7 @@
 // Debugging in VSCode works if I comment the following line out
 import './style.css';
+// The reason may be that Vite alters the import and removes the leading dot from
+// the path. The files are not identical any more. Are source maps needed for this?
 
 const foo = 123;
 
